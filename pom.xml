@@ -54,6 +54,19 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
+             <distributionManagement>
+  <repository>
+    <id>maven-releases</id>
+    <!-- CHANGE HERE by your team Nexus server -->
+    <url>http://35.154.100.149:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>maven-snapshots</id>
+    <!-- CHANGE HERE by your team Nexus server -->
+    <url>http://35.154.100.149:8081/repository/maven-releases/</url>
+  </snapshotRepository>
+</distributionManagement>
+
         <!-- Thymeleaf -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -148,18 +161,10 @@
         </plugins>
     </build>
 
-         <distributionManagement>
-    <repository>
-      <id>maven-releases</id>
-      <name>maven-releases</name>
-      <url>http://35.154.100.149:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>maven-snapshots</id>
-      <name>maven-snapshots</name>
-      <url>http://35.154.100.149:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-</distributionManagement>
-
+   <repository>
+  <id>maven-releases</id>
+  <name>maven-releases</name>
+  <url>http://35.154.100.149:8081/repository/maven-releases/</url>
+</repository>
 
 </project>
